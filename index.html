@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learning Buddies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <span class="lg" id="lg">🐻 Learning Buddies</span>
+    <span class="who" id="who"></span>
+    <button class="ib" id="gr" aria-label="Settings">⚙️</button>
+    <button class="ib" id="out" style="display:none">Log out</button>
+  </header>
+  <main id="app"></main>
+  <div id="cf" aria-hidden="true"></div>
+
+  <!-- load order matters: config → models → services → views → app -->
+  <script src="js/config.js"></script>
+  <script src="js/models/Question.js"></script>
+  <script src="js/models/Lesson.js"></script>
+  <script src="js/models/LessonCatalog.js"></script>
+  <script src="js/models/Badge.js"></script>
+  <script src="js/models/Student.js"></script>
+  <script src="js/services/Settings.js"></script>
+  <script src="js/services/SoundFx.js"></script>
+  <script src="js/services/RemoteDb.js"></script>
+  <script src="js/services/AttemptStore.js"></script>
+  <script src="js/views/View.js"></script>
+  <script src="js/views/LoginView.js"></script>
+  <script src="js/views/PinView.js"></script>
+  <script src="js/views/SettingsView.js"></script>
+  <script src="js/views/HomeView.js"></script>
+  <script src="js/views/WatchView.js"></script>
+  <script src="js/views/SlideView.js"></script>
+  <script src="js/views/QuizView.js"></script>
+  <script src="js/views/DashboardView.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
